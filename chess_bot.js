@@ -35,7 +35,7 @@ phil.on('message', function(message)
     console.log(message.text)
 
     //START NEW GAME:
-    if(txt.startsWith('chess'))
+    if(txt.startsWith('chess')||txt.startsWith('Chess'))
     {
       start_new_game(chat_id,txt, function(){
         draw_chess(chat_id);
